@@ -6,6 +6,7 @@ require_relative "../config/environment.rb"
 
 
 song = Song.new(name: "Hello", album: "25")
+puts Song.column_names
 puts song.values_for_insert
 puts "song name: " + song.name
 puts "song album: " + song.album
